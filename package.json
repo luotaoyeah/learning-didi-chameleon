@@ -1,0 +1,16 @@
+{
+  "name": "learning-didi-chameleon",
+  "version": "0.0.1",
+  "description": "learning-didi-chameleon",
+  "author": "luotao",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "chameleon-api": "0.1.0",
+    "chameleon-bridge": "0.1.0",
+    "chameleon-runtime": "0.0.3",
+    "chameleon-store": "0.0.3",
+    "chameleon-ui-builtin": "0.0.6",
+    "cml-ui": "0.0.6"
+  }
+}
