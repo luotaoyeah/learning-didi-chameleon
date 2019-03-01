@@ -1,5 +1,7 @@
 <template>
-  <view><text>Hello Chameleon!</text></view>
+  <view>
+    <text>first page</text>
+  </view>
 </template>
 
 <script>
@@ -30,7 +32,7 @@ export default new FirstPage();
 
 <style></style>
 
-<script cml-type="json">
+<script cml-type="json" type="application/json">
 {
   "base": {
     "usingComponents": {}

@@ -47,17 +47,19 @@ class Index {
 
 export default new Index();
 </script>
+
 <style scoped>
 .class1 {
   color: #f00;
 }
 </style>
-<script cml-type="json">
+
+<script cml-type="json" type="application/json">
 {
   "base": {
-  "usingComponents": {
-    "first-com": "components/first-com/first-com"
+    "usingComponents": {
+      "first-com": "components/first-com/first-com"
+    }
   }
-}
 }
 </script>

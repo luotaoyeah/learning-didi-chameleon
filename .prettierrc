@@ -7,7 +7,7 @@
       }
     },
     {
-      "files": "*.cml",
+      "files": ["*.cml"],
       "options": {
         "parser": "vue"
       }

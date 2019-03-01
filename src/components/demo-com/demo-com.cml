@@ -1,63 +1,54 @@
 <template>
   <view class="demo-com">
-    <text class="title">{{title}}</text>
-    <image src="{{imageSrc}}" class="logo"></image>  
+    <text class="title">{{ title }}</text>
+    <image src="{{imageSrc}}" class="logo"></image>
   </view>
 </template>
 
 <script>
-
 class DemoCom {
   props = {
     title: {
       type: String,
-      default: ''
+      default: ""
     },
     imageSrc: {
       type: String,
-      default: ''
-    },
-  }
+      default: ""
+    }
+  };
 
-  data = {
-  }
+  data = {};
 
-  computed = {
-  }
+  computed = {};
 
-  watch  = {
-  }
+  watch = {};
 
-  methods = {
-  }
+  methods = {};
 
-  beforeCreate() {
-  }
+  beforeCreate() {}
 
-  created() {
-  }
+  created() {}
 
-  beforeMount() {
-  }
+  beforeMount() {}
 
-  mounted() {
-  }
+  mounted() {}
 
-  beforeDestroy() {
-  }
+  beforeDestroy() {}
 
-  destroyed() {
-  }
+  destroyed() {}
 }
 
 export default new DemoCom();
 </script>
+
 <style>
 .demo-com {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .title {
   align-self: center;
   color: #61c7fc;
@@ -65,13 +56,15 @@ export default new DemoCom();
   margin-top: 160cpx;
   margin-bottom: 20cpx;
 }
+
 .logo {
   width: 150cpx;
   height: 150cpx;
   margin-top: 100cpx;
 }
 </style>
-<script cml-type="json">
+
+<script cml-type="json" type="application/json">
 {
   "base": {
     "usingComponents": {}
