@@ -1,45 +1,63 @@
 <template>
-  <page title="chameleon">
-      <scroller height="{{-1}}">
-        <view class="scroller-wrap">
-          <demo-com title="{{title}}" image-src="{{chameleonSrc}}"></demo-com>
-        </view>
-      </scroller>
-  </page>
+  <view>
+    <first-com></first-com>
+  </view>
 </template>
 
 <script>
-
-class Index  {
+class Index {
   data = {
-    title: "chameleon",
-    chameleonSrc: require('../../assets/images/chameleon.png')
+    message: "Hello Chameleon!",
+    array: [
+      {
+        city: "北京"
+      },
+      {
+        city: "上海"
+      },
+      {
+        city: "广州"
+      }
+    ],
+    showlist: true
+  };
+
+  computed = {
+    message2: function() {
+      return "computed" + this.message;
+    }
+  };
+
+  watch = {
+    showlist(newVal, oldVal) {
+      console.log(`showlist changed:` + newVal);
+    }
+  };
+
+  methods = {
+    changeShow() {
+      this.showlist = !this.showlist;
+    }
+  };
+
+  created() {
+    console.log("生命周期");
   }
 }
 
 export default new Index();
-
 </script>
-<style>
-
-.scroller-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+<style scoped>
+.class1 {
+  color: #f00;
 }
-
 </style>
 <script cml-type="json">
 {
   "base": {
-    "usingComponents": {
-      "demo-com": "/components/demo-com/demo-com"
-    }
-  },
-  "wx": {
-    "navigationBarTitleText": "index",
-    "backgroundTextStyle": "dark",
-    "backgroundColor": "#E2E2E2"
+  "usingComponents": {
+    "first-com": "components/first-com/first-com"
   }
+}
 }
 </script>

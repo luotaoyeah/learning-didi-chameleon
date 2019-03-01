@@ -1,0 +1,44 @@
+<template>
+  <view><text>Hello Chameleon!</text></view>
+</template>
+
+<script>
+class FirstPage {
+  data = {};
+
+  computed = {};
+
+  watch = {};
+
+  methods = {};
+
+  beforeCreate() {}
+
+  created() {}
+
+  beforeMount() {}
+
+  mounted() {}
+
+  beforeDestroy() {}
+
+  destroyed() {}
+}
+
+export default new FirstPage();
+</script>
+
+<style></style>
+
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  },
+  "wx": {
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+  }
+}
+</script>

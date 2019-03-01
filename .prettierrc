@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "*.cml",
+      "options": {
+        "parser": "vue"
+      }
+    }
+  ]
+}

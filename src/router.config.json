@@ -1,7 +1,7 @@
 {
   "mode": "history",
   "domain": "https://www.chameleon.com",
-  "routes":[
+  "routes": [
     {
       "url": "/cml/h5/index",
       "path": "/pages/index/index",
